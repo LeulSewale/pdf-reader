@@ -1,6 +1,4 @@
-
-
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>የህክምና  ማስረጃ</title>
@@ -12,7 +10,7 @@
       }
       #pdf-container {
         width: 100%;
-        height: 100vh;
+        height: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -36,6 +34,16 @@
         border: 1px solid #ccc;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
       }
+      
+      @media (max-width: 768px) {
+        #pdf-container {
+          align-items: flex-start;
+        }
+        #pdf-viewer {
+          width: 90vw;
+          height: 90vh;
+        }
+      }
     </style>
   </head>
   <body>
@@ -43,12 +51,9 @@
       <div id="pdf-viewer">
         <h1>ወ/ሮ ወርቅነሽ  አድማሱ
          የህክምና  ማስረጃ  </h1>
-           <!-- <h1> የህክምና  ማስረጃ  </h1> -->
-        <embed src="የህክምና ማስረጃ.pdf" width="100%" height="100%" type="application/pdf" />
+        <embed src="የወርቅነሽ_አድማሱ_ህክምና_ማስረጃ_1.pdf" width="100%" height="100%" type="application/pdf" />
         <h2>ስልክ ቁጥር ፡ 0920190671 ወይም 0910815966 </h2>
       </div>
-     
     </div>
   </body>
 </html>
-
