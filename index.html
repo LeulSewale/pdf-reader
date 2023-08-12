@@ -6,10 +6,19 @@
     <style>
        body {
         
+    background:var(--bg-color);
+    color: var(--text-color);
           margin: 20;
           padding: 20;
           font-family: Arial, sans-serif;
         }
+        
+        :root{
+    --bg-color:#1f242d;
+    --second-bg-color:#323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
         .image-list{
           margin: 20;
           display: flex;
@@ -21,6 +30,24 @@
           font-size: 54px;
           margin-bottom: 20px;
         }
+        .btn{
+    display: inline-block;
+    /* padding: 1rem 2.8rem; */
+    background-color: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    /* letter-spacing: .1rem; */
+    font-weight: 600;
+    transition: .5s ease;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+
+}
+.btn:hover{
+    box-shadow: none;
+}
         .image-list img{
           margin-left: 50px;
           margin-right: 50px;
@@ -67,14 +94,16 @@
 </head>
 <body>
   <h1>የወርቅነሽ አድማሱ ህክምና ማስረጃ</h1>
+  <a href="https://yehikimna-video.netlify.app/" class="btn"><h2>ህክምና ማስረጃ ቪዲዮ</h2></a>
    <div> <div class="image-list">
+    <img src="0.jpg" alt="0.jpg">
     <img src="1.jpg" alt="1.jpg">
     <img src="2.jpg" alt="2.jpg">
     <img src="3.jpg" alt="3.jpg">
     <img src="4.jpg" alt="4.jpg">
     <img src="5.jpg" alt="5.jpg">
     </div>
-    <a href="https://yehikimna-video.netlify.app/" class="button-link"><h2>ህክምና ማስረጃ ቪዲዮ</h2></a>
+  
 </body>
 </html>
 
